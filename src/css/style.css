@@ -1,0 +1,55 @@
+.flex-center {
+  display: flex;
+  justify-content:center;
+}
+
+.content .register{
+  display: none;
+}
+
+.tablists li {
+  padding: 5px 15px;
+  color: #888;
+  border: 1px solid #888;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.tablists .active {
+  color: black;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #888;
+  cursor: default;
+}
+
+
+.content > div form {
+  min-width: 350px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.content > div input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border:solid 1px #ccc;
+  border-radius: 8px;
+}
+
+.content form > div {
+  margin: 5px 0;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: deepskyblue;
+  text-align: center;
+  border: 1px solid deepskyblue;
+  border-radius: 12px;
+  cursor: pointer;
+}

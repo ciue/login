@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册登录页面</title>
+</head>
+
+<body>
+  <div class="log">
+      <ul class="tablists flex-center">
+          <li class="active" data-role="tab" data-view="#login" >登录</li>
+          <li data-role="tab" data-view="#register">注册</li>
+        </ul>
+        <div class="content flex-center">
+          <div class="login" id="login">
+            <form action="" name="signIn" id="login-form">
+              <div>
+                <input type="text" placeholder="用户名" name="username">
+              </div>
+              <div>
+                <input type="password" placeholder="密码" name="password">
+              </div>
+                <button class="btn" type="submit" id="login-btn">登录</button>
+              
+            </form>
+      
+          </div>
+      
+          <div class="register" id="register">
+            <form action="" name="register">
+              <div>
+                <input type="text" placeholder="用户名" name="username">
+              </div>
+              <div>
+                <input type="email" placeholder="邮箱" name="email">
+              </div>
+              <div>
+                <input type="password" placeholder="密码" name="password">
+              </div>
+              <!-- <div>
+                <input type="password" placeholder="确认密码" name="password">
+              </div> -->
+              <button class="btn" type="submit" name="register">注册</button>
+            </form>
+      
+          </div>
+        </div>
+  </div>
+
+  <div hidden id="successfully">
+    <h2>Hi,</h2>
+    <button class="signout" id="login-out">登出</button>
+  </div>
+  <script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+</body>
+
+</html>
