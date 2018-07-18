@@ -1,7 +1,8 @@
 let register = document.querySelector('form[name=register]')
-let btn = document.querySelector('button[name=register]')
 
-btn.addEventListener('click', (e) => {
+register.addEventListener('submit', (e) => {
+  console.log(register.validity);
+
   e.preventDefault()
   // 新建 AVUser 对象实例
   let user = new AV.User();
@@ -12,10 +13,14 @@ btn.addEventListener('click', (e) => {
   // 设置邮箱
   user.setEmail(register.email.value);
 
+  console.log(user);
   user.signUp().then(function (loginedUser) {
     console.log(loginedUser);
     location.reload();
   }, function (error) {
+    alert(error)
     console.log(error);
   });
+
+
 })

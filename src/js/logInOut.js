@@ -3,7 +3,7 @@ let form = document.querySelector('#login-form')
 let loginOutBtn = document.querySelector('#login-out')
 
 // 登入
-loginBtn.addEventListener('click',(e) => {
+loginBtn.addEventListener('submit',(e) => {
   console.log('登录');
   let userName = form.username.value
   let password = form.password.value

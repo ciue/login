@@ -28,7 +28,3 @@ else {
   el.hidden = true
   log.hidden = false
 }
-
-
-
-
